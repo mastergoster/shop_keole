@@ -1,6 +1,6 @@
 {
-  "assets/app.css": "http://localhost:8080/assets/app.css",
-  "assets/app.js": "http://localhost:8080/assets/app.js",
-  "assets/runtime.js": "http://localhost:8080/assets/runtime.js",
-  "assets/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js": "http://localhost:8080/assets/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js"
+  "assets/app.css": "/assets/app.1dd3bfd6.css",
+  "assets/app.js": "/assets/app.418bd37c.js",
+  "assets/runtime.js": "/assets/runtime.847f55a6.js",
+  "assets/138.4210f685.js": "/assets/138.4210f685.js"
 }
