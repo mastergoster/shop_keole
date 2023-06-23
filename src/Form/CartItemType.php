@@ -13,9 +13,12 @@ class CartItemType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('quantity')
-            ->add('remove', SubmitType::class)
-        ;
+            ->add('quantity', null, [
+                'label' => 'quantité',
+            ])
+            ->add('remove', SubmitType::class, [
+                'label' => 'retirer du panier',
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)
