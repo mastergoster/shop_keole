@@ -21,8 +21,8 @@ class AppFixtures extends Fixture
         // create 20 products! Bam!
         for ($i = 0; $i < 20; $i++) {
             $product = new Products();
-            $product->setNom('product ' . $i);
-            $product->setPrix(mt_rand(10, 100));
+            $product->setName('product ' . $i);
+            $product->setPrice(mt_rand(10, 100));
             $product->setDescription(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -32,7 +32,7 @@ class AppFixtures extends Fixture
                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             );
-            $product->setPrix(mt_rand(10, 100));
+            $product->setPrice(mt_rand(10, 100));
             $product->setCreatedAt(new \DateTimeImmutable());
             $product->setUpdatedAt(new \DateTimeImmutable());
             $manager->persist($product);
@@ -41,8 +41,8 @@ class AppFixtures extends Fixture
         $user = new User();
         $user->setEmail('admin@admin.fr');
         $user->setRoles(['ROLE_ADMIN']);
-        $user->setNom('admin');
-        $user->setPrenom('admin');
+        $user->setLastname('admin');
+        $user->setFirstname('admin');
 
         $password = $this->hasher->hashPassword($user, 'pass_1234');
         $user->setPassword($password);

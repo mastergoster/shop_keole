@@ -17,14 +17,16 @@
 				{% for product in items %}
 					<div class="col-md-4">
 						<div class="card mb-4">
-							<img src="https://via.placeholder.com/200x150" alt="{{ product.nom }}" class="card-img-top">
+							<img src="https://via.placeholder.com/200x150" alt="{{ product.name }}" class="card-img-top">
+
 
 							<div class="card-body">
-								<h5 class="card-title">{{ product.nom }}</h5>
+								<h5 class="card-title">{{ product.name }}</h5>
+
 								<p class="card-text">{{ product.description }}</p>
 								<div class="d-flex justify-content-between align-item-center">
 									<a href="{{ path('product.detail', {id: product.id}) }}" class="btn btn-dark">voir +</a>
-									<span class="h5 mt-auto">{{ product.prix }}
+									<span class="h5 mt-auto">{{ product.price }}
 										€</span>
 								</div>
 							</div>
